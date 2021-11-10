@@ -11,28 +11,29 @@
     <header>
       <h1>Stuart Rickard</h1>
       <nav><ul>
-        <!-- Add refs -->
-        <li><a>About</a></li>
-        <li><a>Work</a></li>
-        <li><a>Contact</a></li>
-        <li><a>Resume</a></li>
+        <li><a href="#about-me-title">About</a></li>
+        <li><a href="#work-title">Work</a></li>
+        <li><a href="#contact-me-title">Contact</a></li>
+        <!-- Add resume link -->
+        <li><a href="#">Resume</a></li>
       </ul></nav>
-      <div>
-        <p>
-          Choose a style: 
-        </p>
-        <!-- Add refs -->
-        <a>v2.0</a>
-        <a>space</a>
-      </div>
+      <!-- ADD STYLE OPTIONS IF TIME ALLOWS
+        <div>
+          <p>
+            Choose a style: 
+          </p>
+          <!-- Add style refs 
+          <a>v2.0</a>
+          <a>space</a>
+        </div>
+      -->
     </header>
     <section class=band-below-header>
       <p>Thinking Outside the Flexbox</p>
     </section>
     <main>
-      <!-- Add ids for navs? -->
       <section class=main-section>
-        <div class=main-section-Title>About Me</div>
+        <div class=main-section-Title id="about-me-title">About Me</div>
         <div class=main-section-Content id=about-me-text>
           <p>
             I'm very interested generally in how humans can use technology to improve their lives.  Specifically to coding, I love user interfaces that are highly intuitive for beginners and also provide a path for more powerful use that unfolds as the user spends time working with the interface.  I find these interfaces very elegant, and I really appreciate elegant coding also.
@@ -46,8 +47,8 @@
         </div>
       </section>
       <section class=main-section>
-        <div class=main-section-Title>Work</div>
-        <div class=main-section-Content>
+        <div class=main-section-Title id="work-title">Work</div>
+        <div class=main-section-Content id="work-card-container">
           <!-- Add alt text for all cards -->
           <article class=work-card>
             <img id=circles src="#" alt="placeholder">
@@ -82,7 +83,7 @@
         </div>
       </section>
       <section class=main-section>
-        <div class=main-section-Title>Contact Me</div>
+        <div class=main-section-Title id="contact-me-title">Contact Me</div>
         <div class=main-section-Content>
           <a href:="tel:+15104999400">+1.510.499.9400</a>
           <a href:="mailto:SR@bau-dev.com">SR@bau-dev.com</a>

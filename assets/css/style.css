@@ -1,0 +1,253 @@
+/* annotate
+fix indenting */
+
+
+:root {
+    --color1: #05668D;
+    --color2: #EBF2FA;
+    --color3: #427AA1;
+    --color4: #679436;
+    --color5: #FFE156;
+    --small-module-size: 4px;
+    --medium-module-size: 11px;
+    --large-module-size: 50px;
+    --largest-module-size: 120px;
+    --largest-text-size: 33px;
+    --second-largest-text-size: 22px;
+    --regular-text-size: 15px;
+    --small-text-size: 8px;
+
+
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    color: var(--color1);
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+header {
+    background-color: var(--color3);
+}
+  
+header h1 {
+    font-size: var(--largest-text-size);
+    font-weight: bold;
+    background-color: var(--color5);
+    border-bottom: var(--small-module-size) solid var(--color2);
+    padding: var(--medium-module-size) var(--largest-module-size) var(--small-module-size) var(--medium-module-size);
+    margin: var(--large-module-size) var(--largest-module-size) var(--large-module-size) 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+header a {
+  font-size: var(--regular-text-size);
+  text-decoration: none;
+  color: var(--color2);
+  padding: 0 var(--medium-module-size) var(--small-module-size) 0;
+  border-bottom: 2px solid var(--color2);
+}
+
+
+.band-below-header {
+    background-image: url("../images/waves.jpg");
+    
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+}
+
+.band-below-header p {
+    margin: var(--largest-module-size);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section {
+    display:flex;
+}
+
+#work-card-container {
+    display:flex;
+}
+
+.work-card {
+    flex-grow: 1;
+}
+
+#circles {
+    flex-grow: 2;
+}
+
+/*
+
+
+header nav ul li a {
+  padding: 10px 15px ;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+.hero {
+  background-image: url('../images/hero-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+transform: rotate(-58deg);
+
+text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+.contact-form input:focus, .contact-form textarea:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
+}
+
+.contact-form button:hover {
+  color: var(--primary-color);
+  background: var(--tertiary-color);
+}
+
+ UTILITIES 
+.text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .flex-row {
+    display: flex;
+  }
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER 
+@media screen and (max-width: 980px) {
+    /* this will be applied on any screen smaller than 980px 
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .hero-cta, .hero-form {
+      width: 100%;
+    }
+    
+    .hero-cta {
+      text-align: center;
+    }
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER 
+  @media screen and (max-width: 768px) {
+    /* this will be applied on any screen between 768px and 575px 
+    section {
+      padding: 30px 15px;
+    }
+  
+    .step h3 {
+      flex: 1 100%;
+      text-align: center;
+    }
+  
+    .step-info {
+      flex: 2 100%;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .step-img {
+      flex: 0 32%;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  
+    .step-text {
+      flex: 100%;  
+    }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER 
+  @media screen and (max-width: 575px) {
+    /* this will be applied on any screen smaller than 575px 
+    .hero-form button {
+      width: 100%;
+    }
+  
+    .section-title {
+      width: 95%;
+    }
+  
+    .intro p {
+      width: 100%;
+    }
+  
+    .trainer {
+      flex: 0 100%;
+    }
+  
+    .contact-info {
+      text-align: center;
+    }
+  
+    .contact-info > * {
+      flex: 0 100%;
+    }
+  
+    .contact-form {
+      order: 3;
+    }
+  }
+
+
+  */
