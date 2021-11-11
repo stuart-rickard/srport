@@ -8,10 +8,12 @@ fix indenting */
     --color3: #427AA1;
     --color4: #679436;
     --color5: #FFE156;
-    --small-module-size: 4px;
-    --medium-module-size: 11px;
-    --large-module-size: 50px;
+
     --largest-module-size: 120px;
+    --large-module-size: 50px;
+    --medium-module-size: 11px;
+    --small-module-size: 4px;
+
     --largest-text-size: 33px;
     --second-largest-text-size: 22px;
     --regular-text-size: 15px;
@@ -33,6 +35,9 @@ fix indenting */
 
 header {
     background-color: var(--color3);
+    display: flex;
+    justify-content: space-between;
+    
 }
   
 header h1 {
@@ -40,24 +45,29 @@ header h1 {
     font-weight: bold;
     background-color: var(--color5);
     border-bottom: var(--small-module-size) solid var(--color2);
-    padding: var(--medium-module-size) var(--largest-module-size) var(--small-module-size) var(--medium-module-size);
+    padding: var(--medium-module-size) var(--largest-module-size) var(--small-module-size) var(--large-module-size);
     margin: var(--large-module-size) var(--largest-module-size) var(--large-module-size) 0;
+    
 }
 
 header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     list-style: none;
+    display: inline;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
   }
+
+  
 
 header a {
   font-size: var(--regular-text-size);
   text-decoration: none;
   color: var(--color2);
-  padding: 0 var(--medium-module-size) var(--small-module-size) 0;
-  border-bottom: 2px solid var(--color2);
+  padding: 0 var(--large-module-size) 0 0;
+  margin: 0 var(--medium-module-size) 0 0;
+  border-bottom: var(--small-module-size) solid var(--color2);
 }
 
 
@@ -67,21 +77,50 @@ header a {
   background-size: cover;
   background-attachment: fixed;
   display: flex;
+  flex-direction: row-reverse;
 }
 
 .band-below-header p {
-    margin: var(--largest-module-size);
+    margin: var(--largest-module-size) var(--large-module-size) var(--large-module-size) var(--large-module-size);
+    background-color: var(--color5);
+    padding: var(--medium-module-size);
+    font-size: var(--second-largest-text-size);
+
 }
 
 main {
-    display: flex;
-    flex-direction: column;
+    background-color: var(--color2);
 }
 
 .main-section {
     display:flex;
+    
 }
 
+.main-section-Title {
+    width: 30%;
+    font-size: var(--largest-text-size);
+    font-weight: bold;
+    border-right: var(--small-module-size) solid var(--color3);
+    padding: var(--medium-module-size) var(--largest-module-size) var(--small-module-size) var(--large-module-size);
+    margin: var(--medium-module-size) var(--large-module-size) var(--medium-module-size) 0;
+}
+
+.main-section-Content {
+    width: 70%;
+    font-size: var(--regular-text-size);
+    font-weight:normal;
+    padding: var(--medium-module-size) var(--largest-module-size) var(--small-module-size) var(--medium-module-size);
+    margin: var(--medium-module-size) var(--large-module-size) var(--medium-module-size) 0;
+}
+
+#about-me-text p {
+    margin-bottom: var(--medium-module-size);
+}
+
+
+
+/*
 #work-card-container {
     display:flex;
 }
@@ -94,7 +133,6 @@ main {
     flex-grow: 2;
 }
 
-/*
 
 
 header nav ul li a {
