@@ -14,9 +14,11 @@ fix indenting */
     --medium-module-size: 11px;
     --small-module-size: 4px;
 
+    --card-size: 300px;
+
     --largest-text-size: 33px;
     --second-largest-text-size: 22px;
-    --regular-text-size: 15px;
+    --regular-text-size: 18px;
     --small-text-size: 8px;
 
 
@@ -123,6 +125,29 @@ main {
     padding: var(--medium-module-size) var(--largest-module-size) var(--small-module-size) var(--medium-module-size);
     margin: var(--medium-module-size) var(--large-module-size) var(--medium-module-size) 0;
 }
+
+#work-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-card {
+    margin: var(--medium-module-size) var(--medium-module-size) var(--medium-module-size) 0;
+    width: var(--card-size);
+    height: var(--card-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.workcard img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
 
 #contact-me-content {
     display: flex;

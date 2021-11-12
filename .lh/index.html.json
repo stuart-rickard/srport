@@ -3,11 +3,27 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1636727161383,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1636732496203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,12 +40,14 @@\n         <div class=main-section-Title id=\"work-title\">Work</div>\r\n         <div class=main-section-Content id=\"work-card-container\">\r\n           <!-- Add alt text for all cards -->\r\n           <article class=work-card>\r\n-            <img id=circles src=\"#\" alt=\"placeholder\">\r\n-            <div>circles\r\n-              <p>Uses the CSS box model to rotate concentric circles within one another</p>\r\n-            </div>\r\n+            <a href=\"https://stuart-rickard.github.io/sandbox/circles/\">\r\n+              <img id=circles src=\"assets/images/waves.jpg\" alt=\"placeholder\">\r\n+              <div>circles\r\n+                <p>Uses the CSS box model to rotate concentric circles within one another</p>\r\n+              </div>\r\n+            </a>\r\n           </article>\r\n           <article class=work-card>\r\n             <img id=abstract-art src=\"#\" alt=\"placeholder\">\r\n             <div>Abstract Art\r\n"
+                },
+                {
+                    "date": 1636733017606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,12 +42,12 @@\n           <!-- Add alt text for all cards -->\r\n           <article class=work-card>\r\n             <a href=\"https://stuart-rickard.github.io/sandbox/circles/\">\r\n               <img id=circles src=\"assets/images/waves.jpg\" alt=\"placeholder\">\r\n+            </a>\r\n               <div>circles\r\n                 <p>Uses the CSS box model to rotate concentric circles within one another</p>\r\n               </div>\r\n-            </a>\r\n           </article>\r\n           <article class=work-card>\r\n             <img id=abstract-art src=\"#\" alt=\"placeholder\">\r\n             <div>Abstract Art\r\n"
+                },
+                {
+                    "date": 1636733814571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,12 +42,12 @@\n           <!-- Add alt text for all cards -->\r\n           <article class=work-card>\r\n             <a href=\"https://stuart-rickard.github.io/sandbox/circles/\">\r\n               <img id=circles src=\"assets/images/waves.jpg\" alt=\"placeholder\">\r\n-            </a>\r\n               <div>circles\r\n                 <p>Uses the CSS box model to rotate concentric circles within one another</p>\r\n               </div>\r\n+            </a>\r\n           </article>\r\n           <article class=work-card>\r\n             <img id=abstract-art src=\"#\" alt=\"placeholder\">\r\n             <div>Abstract Art\r\n"
+                },
+                {
+                    "date": 1636735823678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,9 @@\n       <nav><ul>\r\n         <li><a href=\"#about-me-title\">About</a></li>\r\n         <li><a href=\"#work-title\">Work</a></li>\r\n         <li><a href=\"#contact-me-title\">Contact</a></li>\r\n-        <!-- Add resume link -->\r\n-        <li><a href=\"#\">Resume</a></li>\r\n+        <li><a href=\"./underconstruction.html\">Resume</a></li>\r\n       </ul></nav>\r\n     </header>\r\n     <section class=band-below-header>\r\n       <p>Thinking Outside the Flexbox</p>\r\n"
                 }
             ],
             "date": 1636727161383,
