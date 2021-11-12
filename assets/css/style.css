@@ -50,14 +50,23 @@ header h1 {
     
 }
 
+
+
+header nav {
+  display:flex;
+}
+
+
 header nav ul {
     list-style: none;
-    display: inline;
     display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: flex-end;
+    padding: 0 var(--large-module-size) 0 0;
+    margin: 0 0 var(--large-module-size) 0;
   }
+
 
   
 
@@ -101,8 +110,9 @@ main {
     width: 30%;
     font-size: var(--largest-text-size);
     font-weight: bold;
+    text-align: right;
     border-right: var(--small-module-size) solid var(--color3);
-    padding: var(--medium-module-size) var(--largest-module-size) var(--small-module-size) var(--large-module-size);
+    padding: var(--medium-module-size) var(--large-module-size) var(--medium-module-size) var(--large-module-size);
     margin: var(--medium-module-size) var(--large-module-size) var(--medium-module-size) 0;
 }
 
@@ -112,6 +122,20 @@ main {
     font-weight:normal;
     padding: var(--medium-module-size) var(--largest-module-size) var(--small-module-size) var(--medium-module-size);
     margin: var(--medium-module-size) var(--large-module-size) var(--medium-module-size) 0;
+}
+
+#contact-me-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#contact-me-content a {
+    font-size: var(--second-largest-text-size);
+  text-decoration: none;
+  padding: 0 var(--large-module-size) 0 0;
+  margin: 0 var(--medium-module-size) 0 0;
+  border-bottom: var(--medium-module-size) solid var(--color5);
 }
 
 #about-me-text p {
