@@ -3,10 +3,10 @@ fix indenting */
 
 
 :root {
-    --color1: #05668D;
+    --color1: #045676;
     --color2: #EBF2FA;
     --color3: #427AA1;
-    --color4: #679436;
+    --color4: #30292f;
     --color5: #FFE156;
 
     --largest-module-size: 120px;
@@ -19,7 +19,7 @@ fix indenting */
     --largest-text-size: 33px;
     --second-largest-text-size: 22px;
     --regular-text-size: 18px;
-    --small-text-size: 8px;
+    --small-text-size: 13px;
 
 
   }
@@ -126,14 +126,25 @@ main {
     margin: var(--medium-module-size) var(--large-module-size) var(--medium-module-size) 0;
 }
 
+#about-me-text {
+    display: flex;
+}
+
+#about-me-text img {
+    height: 200px;
+    width: 200px;
+    margin-right: var(--medium-module-size);
+}
+
+
 #work-card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .work-card {
-    margin: var(--medium-module-size) var(--medium-module-size) var(--medium-module-size) 0;
+    margin: var(--medium-module-size) calc(var(--medium-module-size) * 2) var(--medium-module-size) 0;
     width: var(--card-size);
     height: var(--card-size);
     display: flex;
@@ -142,10 +153,23 @@ main {
     overflow: hidden
 }
 
-.workcard img {
+.work-card img {
     flex-shrink: 0;
     min-width: 100%;
-    min-height: 100%
+    min-height: 100%;
+}
+
+.work-card div {
+    position: absolute;
+    background: var(--color4);
+    color: var(--color5);
+    padding: var(--small-module-size);
+}
+
+.work-card p {
+    width: 200px;
+    font-size: var(--small-text-size);
+    color: var(--color2);
 }
 
 
@@ -158,6 +182,7 @@ main {
 #contact-me-content a {
     font-size: var(--second-largest-text-size);
   text-decoration: none;
+  color: var(--color1);
   padding: 0 var(--large-module-size) 0 0;
   margin: 0 var(--medium-module-size) 0 0;
   border-bottom: var(--medium-module-size) solid var(--color5);
