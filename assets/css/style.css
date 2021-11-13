@@ -256,6 +256,10 @@ main {
         font-size: var(--small-text-size);
     }
 
+    #contact-me-title {
+      display: none;
+    }
+
     #contact-me-content {
         border-top: var(--medium-module-size) dotted var(--color4);
     }
